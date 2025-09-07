@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrana Bar - Nourish Your Body, Fuel Your Life</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-leaf"></i>
+                <span>Nutrana Bar</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#products" class="nav-link">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Nourish Your Body, Fuel Your Life</h1>
+            <p class="hero-subtitle">100% Natural, Handcrafted Protein Bars Made with Love</p>
+            <div class="hero-message">
+                <p>Why choose processed foods when you can munch something healthy? Your body is sacred - treat it like one.</p>
+                <p><strong>Invest in yourself the right way and enjoy your money healthily.</strong></p>
+            </div>
+            <div class="hero-cta">
+                <button class="btn btn-primary" onclick="scrollToSection('products')">
+                    Discover Our Bars
+                </button>
+                <button class="btn btn-secondary" onclick="openInstagramDM()">
+                    <i class="fab fa-instagram"></i> Order Now
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Premium Bar Collection</h2>
+                <p class="section-description">Three carefully crafted varieties to match your lifestyle and nutritional needs.</p>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Vegan Energy Bar -->
+                <div class="product-card vegan-card">
+                    <div class="product-card-inner">
+                        <div class="product-card-front">
+                            <div class="product-badge">
+                                <i class="fas fa-leaf"></i>
+                                <span>Vegan</span>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Vegan Energy Bar</h3>
+                                <p class="product-subtitle">Everyday Health</p>
+                                <p class="product-tagline">100% Plant-Based Goodness</p>
+                                <ul class="product-benefits">
+                                    <li><i class="fas fa-check"></i> 100% plant-based ingredients</li>
+                                    <li><i class="fas fa-check"></i> No preservatives or refined sugar</li>
+                                    <li><i class="fas fa-check"></i> Rich in fiber & healthy fats</li>
+                                    <li><i class="fas fa-check"></i> Keeps you fuller for longer</li>
+                                </ul>
+                                <div class="product-price">Affordable Daily Health Bar</div>
+                            </div>
+                            <button class="btn btn-primary" onclick="openInstagramDM()">
+                                <i class="fab fa-instagram"></i> Order Now
+                            </button>
+                        </div>
+                        
+                        <div class="product-card-back">
+                            <div class="product-details">
+                                <h3>Vegan Energy Bar</h3>
+                                <div class="details-section">
+                                    <h4><i class="fas fa-list"></i> Ingredients</h4>
+                                    <ul>
+                                        <li>Oats</li>
+                                        <li>Mixed nuts</li>
+                                        <li>Seeds (chia, flax, pumpkin)</li>
+                                        <li>Dates</li>
+                                        <li>Natural peanut butter</li>
+                                    </ul>
+                                </div>
+                                <div class="details-section">
+                                    <h4><i class="fas fa-exclamation-triangle"></i> Allergens</h4>
+                                    <ul>
+                                        <li>Contains: Nuts, Peanuts</li>
+                                        <li>May contain: Sesame</li>
+                                    </ul>
+                                </div>
+                                <div class="details-section">
+                                    <h4><i class="fas fa-chart-line"></i> Nutritional Highlights</h4>
+                                    <ul>
+                                        <li>High in fiber</li>
+                                        <li>Rich in healthy fats</li>
+                                        <li>Natural sweeteners only</li>
+                                        <li>Vegan certified</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary" onclick="openInstagramDM()">
+                                <i class="fab fa-instagram"></i> Order Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Low-Carb Nut & Seed Bar -->
+                <div class="product-card keto-card">
+                    <div class="product-card-inner">
+                        <div class="product-card-front">
+                            <div class="product-badge">
+                                <i class="fas fa-weight-hanging"></i>
+                                <span>Keto</span>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Low-Carb Nut & Seed Bar</h3>
+                                <p class="product-subtitle">Keto-Friendly</p>
+                                <p class="product-tagline">Smart Carb Choice</p>
+                                <ul class="product-benefits">
+                                    <li><i class="fas fa-check"></i> Only 9-10g net carbs per bar</li>
+                                    <li><i class="fas fa-check"></i> Packed with protein & healthy fats</li>
+                                    <li><i class="fas fa-check"></i> Keto and diabetic-friendly</li>
+                                    <li><i class="fas fa-check"></i> Lightly sweetened naturally</li>
+                                </ul>
+                                <div class="product-price">Premium Low-Carb Bar</div>
+                            </div>
+                            <button class="btn btn-primary" onclick="openInstagramDM()">
+                                <i class="fab fa-instagram"></i> Order Now
+                            </button>
+                        </div>
+                        
+                        <div class="product-card-back">
+                            <div class="product-details">
+                                <h3>Low-Carb Nut & Seed Bar</h3>
+                                <div class="details-section">
+                                    <h4><i class="fas fa-list"></i> Ingredients</h4>
+                                    <ul>
+                                        <li>Almonds</li>
+                                        <li>Walnuts</li>
+                                        <li>Pumpkin seeds</li>
+                                        <li>Sunflower seeds</li>
+                                        <li>Flax seeds</li>
+                                        <li>Dates</li>
+                                        <li>Honey (Stevia version available)</li>
+                                    </ul>
+                                </div>
+                                <div class="details-section">
+                                    <h4><i class="fas fa-exclamation-triangle"></i> Allergens</h4>
+                                    <ul>
+                                        <li>Contains: Tree nuts</li>
+                                        <li>May contain: Peanuts, Sesame</li>
+                                    </ul>
+                                </div>
+                                <div class="details-section">
+                                    <h4><i class="fas fa-chart-line"></i> Nutritional Highlights</h4>
+                                    <ul>
+                                        <li>9-10g net carbs</li>
+                                        <li>High protein content</li>
+                                        <li>Keto-friendly</li>
+                                        <li>Low sugar</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary" onclick="openInstagramDM()">
+                                <i class="fab fa-instagram"></i> Order Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- High-Protein Chocolate Peanut Butter Bar -->
+                <div class="product-card protein-card">
+                    <div class="product-card-inner">
+                        <div class="product-card-front">
+                            <div class="product-badge">
+                                <i class="fas fa-dumbbell"></i>
+                                <span>Protein</span>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">High-Protein Chocolate PB Bar</h3>
+                                <p class="product-subtitle">Fitness Boost</p>
+                                <p class="product-tagline">Power-Packed Performance</p>
+                                <ul class="product-benefits">
+                                    <li><i class="fas fa-check"></i> 15-16g protein per bar</li>
+                                    <li><i class="fas fa-check"></i> Delicious chocolate flavor</li>
+                                    <li><i class="fas fa-check"></i> Great for post-workout recovery</li>
+                                    <li><i class="fas fa-check"></i> Clean ingredients + whey protein</li>
+                                </ul>
+                                <div class="product-price">Gym-Friendly Protein Bar</div>
+                            </div>
+                            <button class="btn btn-primary" onclick="openInstagramDM()">
+                                <i class="fab fa-instagram"></i> Order Now
+                            </button>
+                        </div>
+                        
+                        <div class="product-card-back">
+                            <div class="product-details">
+                                <h3>High-Protein Chocolate PB Bar</h3>
+                                <div class="details-section">
+                                    <h4><i class="fas fa-list"></i> Ingredients</h4>
+                                    <ul>
+                                        <li>Whey protein</li>
+                                        <li>Natural peanut butter</li>
+                                        <li>Mixed nuts and seeds</li>
+                                        <li>Dark chocolate</li>
+                                        <li>Oats</li>
+                                        <li>Natural sweeteners</li>
+                                    </ul>
+                                </div>
+                                <div class="details-section">
+                                    <h4><i class="fas fa-exclamation-triangle"></i> Allergens</h4>
+                                    <ul>
+                                        <li>Contains: Milk, Nuts, Peanuts</li>
+                                        <li>May contain: Soy, Sesame</li>
+                                    </ul>
+                                </div>
+                                <div class="details-section">
+                                    <h4><i class="fas fa-chart-line"></i> Nutritional Highlights</h4>
+                                    <ul>
+                                        <li>15-16g protein</li>
+                                        <li>Balanced healthy fats</li>
+                                        <li>High fiber content</li>
+                                        <li>No artificial additives</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary" onclick="openInstagramDM()">
+                                <i class="fab fa-instagram"></i> Order Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose Nutrana Bar?</h2>
+                <p class="section-description">At Nutrana Bar, we believe your body deserves better than processed foods.</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-features">
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-hands"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Handcrafted with Care</h4>
+                            <p>Every bar is made by hand in small batches, ensuring quality and freshness in every bite.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Locally Sourced Ingredients</h4>
+                            <p>We partner with local suppliers to bring you the freshest nuts, seeds, and natural sweeteners.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Transparent Quality</h4>
+                            <p>No hidden ingredients, no artificial additives. What you see is what you get.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-message">
+                    <blockquote>
+                        "We keep our recipe transparent — you can see every ingredient, nothing hidden."
+                    </blockquote>
+                    <button class="btn btn-primary" onclick="openInstagramDM()">
+                        <i class="fab fa-instagram"></i> Start Your Healthy Journey
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Ready to Fuel Your Life?</h2>
+                <p class="section-description">Connect with us on Instagram to place your order.</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <h3>Follow & Order</h3>
+                    <p>@nutrana_bar</p>
+                    <button class="btn btn-primary btn-lg" onclick="openInstagramDM()">
+                        <i class="fab fa-instagram"></i> Message Us on Instagram
+                    </button>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Available Hours</h4>
+                            <p>Monday - Sunday: 9:00 AM - 8:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-shipping-fast"></i>
+                        <div>
+                            <h4>Fresh Delivery</h4>
+                            <p>Made fresh daily and delivered within 24 hours</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <i class="fas fa-leaf"></i>
+                        <span>Nutrana Bar</span>
+                    </div>
+                    <p>Nourish Your Body, Fuel Your Life</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Nutrana Bar. Made with ❤️ for your health.</p>
+                <p>Your body is sacred - if you treat it like one.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
